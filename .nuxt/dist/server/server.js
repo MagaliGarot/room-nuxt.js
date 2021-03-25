@@ -932,7 +932,7 @@ async function setContext(app, context) {
   // If context not defined, create it
   if (!app.context) {
     app.context = {
-      isStatic: false,
+      isStatic: true,
       isDev: false,
       isHMR: false,
       app,
@@ -2171,6 +2171,10 @@ const layouts = {
 
     isFetching() {
       return this.nbFetching > 0;
+    },
+
+    isPreview() {
+      return Boolean(this.$options.previewData);
     }
 
   },
@@ -2713,6 +2717,32 @@ async function createApp(ssrContext, config = {}) {
         "hid": "description",
         "name": "description",
         "content": ""
+      }, {
+        "hid": "charset",
+        "charset": "utf-8"
+      }, {
+        "hid": "mobile-web-app-capable",
+        "name": "mobile-web-app-capable",
+        "content": "yes"
+      }, {
+        "hid": "apple-mobile-web-app-title",
+        "name": "apple-mobile-web-app-title",
+        "content": "chambresdhotes"
+      }, {
+        "hid": "og:type",
+        "name": "og:type",
+        "property": "og:type",
+        "content": "website"
+      }, {
+        "hid": "og:title",
+        "name": "og:title",
+        "property": "og:title",
+        "content": "chambresdhotes"
+      }, {
+        "hid": "og:site_name",
+        "name": "og:site_name",
+        "property": "og:site_name",
+        "content": "chambresdhotes"
       }],
       "link": [{
         "rel": "icon",
@@ -2724,9 +2754,25 @@ async function createApp(ssrContext, config = {}) {
       }, {
         "rel": "stylesheet",
         "href": "https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Prata&display=swap\" rel=\"stylesheet"
+      }, {
+        "hid": "shortcut-icon",
+        "rel": "shortcut icon",
+        "href": "\u002F_nuxt\u002Ficons\u002Ficon_64x64.5f6a36.png"
+      }, {
+        "hid": "apple-touch-icon",
+        "rel": "apple-touch-icon",
+        "href": "\u002F_nuxt\u002Ficons\u002Ficon_512x512.5f6a36.png",
+        "sizes": "512x512"
+      }, {
+        "rel": "manifest",
+        "href": "\u002F_nuxt\u002Fmanifest.a2280395.json",
+        "hid": "manifest"
       }],
       "style": [],
-      "script": []
+      "script": [],
+      "htmlAttrs": {
+        "lang": "en"
+      }
     },
     store,
     router,
