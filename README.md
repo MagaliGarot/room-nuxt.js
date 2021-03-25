@@ -5,6 +5,7 @@ En construction
 # Documentation
 
 https://www.youtube.com/watch?v=Wdmi4k7sFzU&t=7818s
+https://www.digitalocean.com/community/tutorials/vuejs-create-image-slider
 
 # Picture
 https://pixabay.com/fr/photos/mont-saint-michel-france-287614/

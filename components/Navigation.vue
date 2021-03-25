@@ -14,7 +14,7 @@
 <style scoped>
   .nav{
     display: flex;
-    background-color: #dcc1c8;
+    background-color: #20202c;
     padding: 20px 20px;
   }
 
@@ -26,7 +26,10 @@
   }
 
 .linkNav__text{
+  font-family: 'PT Serif', serif;
   color:white;
+
+  padding: 20px 20px;
 }
 
 </style>

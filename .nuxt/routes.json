@@ -1,0 +1,30 @@
+[
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/home/magaligarot/BeCode/room-nuxt.js/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_7453852b"
+  },
+  {
+    "name": "products",
+    "path": "/products",
+    "component": "/home/magaligarot/BeCode/room-nuxt.js/pages/products/index.vue",
+    "chunkName": "pages/products/index",
+    "_name": "_4ff9f5ac"
+  },
+  {
+    "name": "products-id",
+    "path": "/products/:id",
+    "component": "/home/magaligarot/BeCode/room-nuxt.js/pages/products/_id.vue",
+    "chunkName": "pages/products/_id",
+    "_name": "_42a17314"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/magaligarot/BeCode/room-nuxt.js/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_46963cc6"
+  }
+]

@@ -1,6 +1,6 @@
 <template>
      <div class="container-flex">
-         <p>TEST</p>
+         <!-- Permet d'appeler qu'une chambre à la fois -->
     <Chambres 
       v-for="Info in chambresInfo.slice(0,1)" 
       :key="Info.id"

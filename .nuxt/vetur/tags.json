@@ -1,0 +1,11 @@
+{
+  "Chambres": {
+    "description": "Auto imported from components/Chambres.vue"
+  },
+  "Headers": {
+    "description": "Auto imported from components/Headers.vue"
+  },
+  "Navigation": {
+    "description": "Auto imported from components/Navigation.vue"
+  }
+}

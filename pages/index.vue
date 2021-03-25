@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <Headers />
-
+    <Headers> 
+    </Headers>
     <div class="container-flex">
     <Chambres 
       v-for="Info in chambresInfo" 
@@ -10,6 +10,7 @@
       >
     </Chambres>
     </div>
+    <Slider />
 
   </div>
 </template>
@@ -17,10 +18,12 @@
 <script>
 import { chambresData } from "@/assets/data.js";
 import Chambres from "@/components/Chambres.vue";
+import Slider from "@/components/Slider.vue";
 
 export default {
   components: {
     Chambres,
+    Slider,
   },
 
   data(){
@@ -45,8 +48,12 @@ export default {
 
 /* FLEX CARD CHAMBRE */
 .container-flex{
+    height: 100%;
+
     display:flex;
     flex-wrap: wrap;
+
     margin-top:70px;
+    margin-bottom: 90px;
 }
 </style>
