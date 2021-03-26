@@ -29,7 +29,7 @@ export default{
 .hero{
     background-color: #20202c;
     width: 100%;
-    height: 100%;
+    height: 550px;
     padding: 4rem 4rem;
 }
 
@@ -38,7 +38,7 @@ export default{
 
     position: absolute;
     top: 1020px;
-    z-index: 1;
+    /* z-index: 1; */
 
     width: 20rem;
     margin-right: 10%;
@@ -78,6 +78,18 @@ export default{
 @media screen and (min-width: 1000px) {
 .header-flex{
     display:flex;
+}
+
+.fond-logo{
+    height: 550px;
+    background-color: #20202c;
+}
+.hero__logo{
+    width: 50rem;
+    top: 39px;
+    margin-right: 50px;
+    margin-left: 50px;
+    position: relative;
 }
 
 }

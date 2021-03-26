@@ -6,6 +6,7 @@ En construction
 
 https://www.youtube.com/watch?v=Wdmi4k7sFzU&t=7818s
 https://www.digitalocean.com/community/tutorials/vuejs-create-image-slider
+https://www.youtube.com/watch?v=1SAZMFwYUDE
 
 # Picture
 https://pixabay.com/fr/photos/mont-saint-michel-france-287614/

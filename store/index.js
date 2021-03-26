@@ -5,7 +5,7 @@ export const state = () => ({
             id: 1,
             nom: 'Framboise', 
             tarif: '200 euro la nuit', 
-            infos: 'Chambre 2 personnes, (1 lit avec 2 places)',
+            infos: 'Chambre 2 personnes, (1 lit avec 2 places).',
             description: "Très jolie chambre au calme, vous appécierez, sa vue sur le Mont-Saint Michel. La chambre dispose d'une TV",
             image: "framboise.jpg", 
             alt: "Chambre Framboise",

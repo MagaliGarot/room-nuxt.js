@@ -1,5 +1,12 @@
 [
   {
+    "name": "article",
+    "path": "/article",
+    "component": "/home/magaligarot/BeCode/room-nuxt.js/pages/article.vue",
+    "chunkName": "pages/article",
+    "_name": "_baae59fe"
+  },
+  {
     "name": "contact",
     "path": "/contact",
     "component": "/home/magaligarot/BeCode/room-nuxt.js/pages/contact.vue",
@@ -12,6 +19,13 @@
     "component": "/home/magaligarot/BeCode/room-nuxt.js/pages/products/index.vue",
     "chunkName": "pages/products/index",
     "_name": "_4ff9f5ac"
+  },
+  {
+    "name": "blog-slug",
+    "path": "/blog/:slug?",
+    "component": "/home/magaligarot/BeCode/room-nuxt.js/pages/blog/_slug.vue",
+    "chunkName": "pages/blog/_slug",
+    "_name": "_2be99ba2"
   },
   {
     "name": "products-id",

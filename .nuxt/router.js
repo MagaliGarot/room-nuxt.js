@@ -4,8 +4,10 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _baae59fe = () => interopDefault(import('../pages/article.vue' /* webpackChunkName: "pages/article" */))
 const _7453852b = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
 const _4ff9f5ac = () => interopDefault(import('../pages/products/index.vue' /* webpackChunkName: "pages/products/index" */))
+const _2be99ba2 = () => interopDefault(import('../pages/blog/_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
 const _42a17314 = () => interopDefault(import('../pages/products/_id.vue' /* webpackChunkName: "pages/products/_id" */))
 const _46963cc6 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -21,6 +23,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/article",
+    component: _baae59fe,
+    name: "article"
+  }, {
     path: "/contact",
     component: _7453852b,
     name: "contact"
@@ -28,6 +34,10 @@ export const routerOptions = {
     path: "/products",
     component: _4ff9f5ac,
     name: "products"
+  }, {
+    path: "/blog/:slug?",
+    component: _2be99ba2,
+    name: "blog-slug"
   }, {
     path: "/products/:id",
     component: _42a17314,

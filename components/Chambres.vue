@@ -2,7 +2,8 @@
         <NuxtLink class="chambre" :to="`products/${cardsChambre.id}`">
             <h4 class="chambre__title">{{ cardsChambre.nom }}</h4>
             <img class="chambre__picture" :src="require(`@/assets/picture/${cardsChambre.image}`)" alt="cardsChambre.alt">
-            <p class="chambre__link"> ... </p>
+            <br/>
+            <button class="chambre__link"> La chambre </button>
         </NuxtLink>
 </template>
 
@@ -46,13 +47,21 @@ export default {
 }
 
 .chambre__link{
-    font-size: 3rem;
-    color:#20202c;
+    font-size: 2rem;
+    color:white;
+    font-family: 'Prata', serif;
+
+    background-color:#20202c;
     text-decoration: none;
+    border: none;
+
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 .chambre__link:hover{
-  color:#6e1324;
+  background-color:#747474;
 }
 
 /* ================================

@@ -11,7 +11,6 @@
     </Chambres>
     </div>
     <Slider />
-
   </div>
 </template>
 
