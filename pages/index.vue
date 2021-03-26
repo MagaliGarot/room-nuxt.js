@@ -55,4 +55,8 @@ export default {
     margin-top:70px;
     margin-bottom: 90px;
 }
+
+a{
+  text-decoration: none;
+}
 </style>

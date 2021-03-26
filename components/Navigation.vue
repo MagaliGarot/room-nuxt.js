@@ -17,22 +17,62 @@
 <style scoped>
   .nav{
     display: flex;
+
     background-color: #20202c;
-    padding: 20px 20px;
+    padding: 1px 1px;
   }
 
   .linkNav {
   text-decoration: none;
   color: black;
 
-  padding: 20px 20px;
+  padding: 10px 5px;
   }
 
 .linkNav__text{
   font-family: 'PT Serif', serif;
   color:white;
 
+  padding: 30px 10px;
+}
+
+/* ================================
+    RESPONSIVE --> SCREEN DESKTOP
+   ================================ */
+
+@media screen and (min-width: 1000px) {
+  .nav{
+    padding: 20px 20px;
+  }
+
+   .linkNav {
   padding: 20px 20px;
+  }
+
+  .linkNav__text{
+  padding: 20px 20px;
+}
+
+}
+
+/* ================================
+    RESPONSIVE --> TABLETTE
+   ================================ */
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .nav{
+    padding: 20px 20px;
+  }
+
+   .linkNav {
+  padding: 20px 20px;
+  }
+
+  .linkNav__text{
+  padding: 20px 20px;
+}
+  
+
 }
 
 </style>

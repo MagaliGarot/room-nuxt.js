@@ -1,17 +1,17 @@
 <template>
     <!-- Permet d'appeler l'id d'une page => voir index ds store -->
 <div>
-    <div v-if="chambreData">
-        <h3>
+    <div class="chambre" v-if="chambreData">
+        <h3 class="chambre__title">
             {{ chambreData.nom }}
         </h3>
-        <p>
+        <p class="chambre__tarif">
             {{ chambreData.tarif }}
         </p>
-        <p>
+        <p class="chambre__infos">
             {{ chambreData.infos }}
         </p>
-        <p>
+        <p class="chambre__descri">
             {{ chambreData.description }}
         </p>
         <img :src="require(`@/assets/picture/${chambreData.image}`)" alt="" class="chambreData.alt">
@@ -42,3 +42,63 @@
     }
 
 </script>
+
+<style scoped>
+
+.chambre{
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.chambre__title{
+    margin-top: 60px;
+    color: #20202c;
+    font-size:2.3rem;
+    font-family: 'PT Serif', serif;
+    text-align:center;
+}
+
+.chambre__tarif{
+    margin-top: 60px;
+    color: #20202c;
+    font-size:1.2rem;
+    font-family: 'Prata', serif;
+}
+
+.chambre__infos{
+    margin-top: 10px;
+    color: #20202c;
+    font-size:1.2rem;
+    font-family: 'Prata', serif;
+}
+
+.chambre__descri{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #20202c;  
+    font-size:1.2rem;
+    font-family: 'Prata', serif;
+}
+
+img{
+    width: 20rem;
+    margin-bottom: 60px;
+}
+
+/* ================================
+    RESPONSIVE --> SCREEN DESKTOP
+   ================================ */
+
+@media screen and (min-width: 1000px) {
+
+}
+
+/* ================================
+    RESPONSIVE --> TABLETTE
+   ================================ */
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+
+
+}
+</style>

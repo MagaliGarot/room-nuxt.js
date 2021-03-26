@@ -29,7 +29,7 @@ export default{
 .hero{
     background-color: #20202c;
     width: 100%;
-    height: 550px;
+    height: 975px;
     padding: 4rem 4rem;
 }
 
@@ -76,12 +76,14 @@ export default{
    ================================ */
 
 @media screen and (min-width: 1000px) {
-.header-flex{
-    display:flex;
+
+
+.hero{
+    height: 520px;
 }
 
 .fond-logo{
-    height: 550px;
+    height: 520px;
     background-color: #20202c;
 }
 .hero__logo{
@@ -92,6 +94,10 @@ export default{
     position: relative;
 }
 
+.header-flex{
+    display:flex;
+}
+
 }
 
 /* ================================
@@ -99,11 +105,16 @@ export default{
    ================================ */
 
 @media screen and (min-width: 500px) and (max-width: 1000px) {
+
+.hero{
+    height: 420px;
+}
     
 .fond-logo{
-    height: 300px;
+    height: 400px;
     background-color: #20202c;
 }
+
 .hero__logo{
     display:block;
 
