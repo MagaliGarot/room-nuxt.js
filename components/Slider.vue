@@ -102,14 +102,15 @@ export default {
 }
 
 .stop {
+  display: block;
   cursor: pointer;
   position: relative;
   top: -150px;
   width: 3rem;
   padding: 16px;
 
-  margin-right: 45%;
-  margin-left: 43%;
+  margin-right: auto;
+  margin-left: auto;
 
   transition: 0.7s ease;
 
@@ -128,13 +129,28 @@ export default {
 
 @media screen and (min-width: 1000px) {
 
-     .container-slider{
+    .container-slider{
     height:900px;
+    width: 80rem;
+
+    margin-top: 140px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+    .fade-enter-active,
+    .fade-leave-active {
+     width:80rem;
+    }
+
+    .fade-enter,
+    .fade-leave-to {
+      width:80rem;
     }
 
     .slider-picture {
     height:900px;
-    width:100%;
+     width: 80rem;
     } 
 
     .prev, .next {
@@ -144,8 +160,6 @@ export default {
     .stop {
     top: -200px;
     width: 5rem;
-    margin-right: 45%;
-    margin-left: 45%;
     }
 }
 
@@ -165,15 +179,13 @@ export default {
     }
 
     .prev, .next {
-    top: -400px;
+    top: -320px;
 }
 
     .stop {
     top: -200px;
     width: 4rem;
-
-    margin-right: 45%;
-    margin-left: 45%;
+    
     }
 
 }

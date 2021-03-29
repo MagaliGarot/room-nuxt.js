@@ -11,18 +11,28 @@
     </Chambres>
     </div>
     <Slider />
+    <Map
+     v-for="infoMap in map" 
+     :key="infoMap.id"
+     :item="infoMap"
+    > 
+    </Map>
+
   </div>
 </template>
 
 <script>
 import { chambresData } from "@/assets/data.js";
+import { mapState } from "vuex";
 import Chambres from "@/components/Chambres.vue";
 import Slider from "@/components/Slider.vue";
+import Map from "@/components/Map.vue";
 
 export default {
   components: {
     Chambres,
     Slider,
+    Map,
   },
 
   data(){
@@ -30,6 +40,12 @@ export default {
       chambresInfo : chambresData,
     }
   },
+
+  computed: {
+            ...mapState([
+                'map'
+            ])
+        }
 }
 </script>
 

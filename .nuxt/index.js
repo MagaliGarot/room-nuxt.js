@@ -14,6 +14,7 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_plugin_590b36cb from 'nuxt_plugin_plugin_590b36cb' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_nuxtleaflet_f1a55178 from 'nuxt_plugin_nuxtleaflet_f1a55178' // Source: ./nuxt-leaflet.js (mode: 'client')
 import nuxt_plugin_pluginclient_25a2b672 from 'nuxt_plugin_pluginclient_25a2b672' // Source: ./content/plugin.client.js (mode: 'client')
 import nuxt_plugin_pluginserver_52e8164f from 'nuxt_plugin_pluginserver_52e8164f' // Source: ./content/plugin.server.js (mode: 'server')
 import nuxt_plugin_workbox_1bf74986 from 'nuxt_plugin_workbox_1bf74986' // Source: ./workbox.js (mode: 'client')
@@ -214,6 +215,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_590b36cb === 'function') {
     await nuxt_plugin_plugin_590b36cb(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_nuxtleaflet_f1a55178 === 'function') {
+    await nuxt_plugin_nuxtleaflet_f1a55178(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_pluginclient_25a2b672 === 'function') {
