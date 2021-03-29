@@ -67,7 +67,7 @@ Infos et Images : http://chambresaustavit.free.fr/
 Logo et Illustrations : Magali Garot
 Icon du Slider : https://fontawesome.com/
 
-# Nuxt.js
+### Nuxt.js
 https://fr.nuxtjs.org/docs/2.x/get-started/installation
 
 ## Build Setup

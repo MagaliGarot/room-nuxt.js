@@ -8,6 +8,7 @@ You can directly use them in pages and other components without the need to impo
 
 - `<Chambres>` | `<chambres>` (components/Chambres.vue)
 - `<Headers>` | `<headers>` (components/Headers.vue)
+- `<Map>` | `<map>` (components/Map.vue)
 - `<Navigation>` | `<navigation>` (components/Navigation.vue)
 - `<Notfound>` | `<notfound>` (components/Notfound.vue)
 - `<Slider>` | `<slider>` (components/Slider.vue)
