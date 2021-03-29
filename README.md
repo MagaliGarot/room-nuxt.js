@@ -4,7 +4,7 @@ En construction, page contact à venir
 
 # 🔗 Lien vers le projet : 
 
-https://6061c3357191e40007bd7c3b--distracted-bassi-7a1b63.netlify.app/
+https://6061c3b440fa25000731a12e--distracted-bassi-7a1b63.netlify.app/
 
 # 🗒Le projet :
 
