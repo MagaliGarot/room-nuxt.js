@@ -4,7 +4,7 @@ En construction, page contact à venir
 
 # 🔗 Lien vers le projet : 
 
-https://boring-ride-d2f2ef.netlify.app/
+https://6061c3357191e40007bd7c3b--distracted-bassi-7a1b63.netlify.app/
 
 # 🗒Le projet :
 
