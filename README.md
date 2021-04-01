@@ -58,10 +58,10 @@ Actuellement en formation à BeCode Liège, je me forme avec comme objectif de d
 
 ### 📌 Documentation
 
-https://www.youtube.com/watch?v=Wdmi4k7sFzU&t=7818s
-https://www.digitalocean.com/community/tutorials/vuejs-create-image-slider
-https://www.youtube.com/watch?v=1SAZMFwYUDE
-https://fr.vuejs.org/v2/cookbook/form-validation.html
+https://www.youtube.com/watch?v=Wdmi4k7sFzU&t=7818s<br>
+https://www.digitalocean.com/community/tutorials/vuejs-create-image-slider<br>
+https://www.youtube.com/watch?v=1SAZMFwYUDE<br>
+https://fr.vuejs.org/v2/cookbook/form-validation.html<br>
 
 ### 🖼 Picture
 Infos et Images : http://chambresaustavit.free.fr/
