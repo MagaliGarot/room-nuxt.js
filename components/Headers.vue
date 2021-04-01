@@ -98,6 +98,10 @@ export default{
     display:flex;
 }
 
+.hero__title{
+    font-size:3.5rem;
+}
+
 }
 
 /* ================================

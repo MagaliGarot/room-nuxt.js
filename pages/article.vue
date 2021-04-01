@@ -1,6 +1,8 @@
 <template>
-    <div>
-        <h1 class="titlePage">Articles</h1>
+    <div class="noFlex">
+        <div>
+            <h1 class="titlePage">Articles</h1>
+        </div>
         <div class="articles">
             <div class="article" v-for="article of articles" :key="article">
                 <nuxt-link class="article__container" :to="{ name: 'blog-slug', params: { slug: article.slug } }">
@@ -20,7 +22,6 @@ export default {
             .only(['title', 'description' ,'img', 'slug'])
             .sortBy('createdAt', 'asc')
             .fetch()
-
         return { articles }
     }
 
@@ -30,12 +31,10 @@ export default {
 
 <style scoped>
 
+
 .articles{
     margin-right:1.5rem;
     margin-left:1.5rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .titlePage{
@@ -53,7 +52,7 @@ export default {
     margin-top: 60px;
 
     display: block;
-    width: 20rem;
+    width: 30rem;
 
     margin-right: auto;
     margin-left: auto;
@@ -115,7 +114,13 @@ export default {
 
 @media screen and (min-width: 500px) and (max-width: 1000px) {
 
-
+.articles{
+    margin-right:20%;
+    margin-left:20%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 }
 

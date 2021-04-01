@@ -1,10 +1,7 @@
 <template>
-    <div>
-      <div>
-        <h1>Page Contact</h1>
-        <p>Formulaire</p>
-      </div>
-
+  
+  <div class="imageFond">
+        <h1 class="titleContact">Contact  <p>En construction</p> </h1>
     <div class="containerForm">
       <form
         id="app"
@@ -18,9 +15,9 @@
       >
 
         <p v-if="errors.length">
-          <b>Merci de vérifier les champs suivant :</b>
+          <b class="attention">Merci de vérifier les champs suivant :</b>
           <ul>
-            <li style="color: red" v-for="error in errors" :key="error">{{ error }}</li>
+            <li class="attentionList" style="color: red" v-for="error in errors" :key="error">{{ error }}</li>
           </ul>
         </p>
 
@@ -44,6 +41,13 @@
           >
         </p>
 
+        <p style="display: none">
+          <label>
+            Don't fill out if you're human
+            <input name="bot-field">
+          </label>
+        </p>
+
         <p>
           <label for="msg">Message</label>
           <textarea 
@@ -54,17 +58,11 @@
           </textarea>
         </p>
 
-        <p style="display: none" class="hidden">
-          <label>
-            Don't fill out if you're human
-            <input name="bot-field">
-          </label>
-        </p>
-
         <p>
-          <input
+          <input 
             type="submit"
             value="Submit"
+            class="buttonSubmit"
           >
         </p>
 
@@ -104,7 +102,6 @@ export default{
         return true;
       }
 
-
       e.preventDefault();
     },
     validEmail: function (email) {
@@ -117,37 +114,108 @@ export default{
 
 <style scoped>
 
+/* .imageFond{
+  background-image: url("../assets/picture/Paysage-Saint-Malo-Magali-Garot.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+} */
+
+.titleContact{
+  text-align:center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  font-family: 'PT Serif', serif;
+}
+
 .containerForm{
   background-color:#20202c;
   border-radius: 20px;
   width: 70%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 50px;
   padding: 35px 35px;
 }
 
 input{
-  width: 90%;
+  width: 100%;
 
   margin-right: auto;
   margin-left: auto;
-
   padding: 4px 4px;
 }
 
 label{
+  display: block;
   color: white;
-  padding-bottom: 5px;
+  font-family: 'Prata', serif;
 
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 textarea{
-  width: 90%;
+  width: 100%;
   height: 5rem;
 
   border-radius: 10px;
   border: none;
+}
+
+.buttonSubmit{
+  font-family: 'PT Serif', serif;
+  font-weight: 800;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 30px;
+  height: 40px;
+}
+
+.attention{
+  color: white;
+  font-family: 'PT Serif', serif;
+
+  margin-bottom: 5px;
+}
+
+.attentionList{
+  font-family: 'PT Serif', serif;
+}
+
+/* ================================
+    RESPONSIVE --> SCREEN DESKTOP
+   ================================ */
+
+@media screen and (min-width: 1000px) {
+
+  .containerForm{
+    width: 30%;
+}
+
+
+.buttonSubmit{
+   width: 30%;
+   height: 40px;
+}
+
+}
+
+/* ================================
+    RESPONSIVE --> TABLETTE
+   ================================ */
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+
+.buttonSubmit{
+   width: 30%;
+   height: 40px;
+}
+
 }
 
 </style>

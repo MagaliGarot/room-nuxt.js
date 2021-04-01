@@ -17,7 +17,6 @@
      :item="infoMap"
     > 
     </Map>
-
   </div>
 </template>
 
