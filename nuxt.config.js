@@ -23,7 +23,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-
+    // 'bootstrap-css-only/css/bootstrap.min.css',
+    // 'mdbvue/lib/css/mdb.min.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -61,5 +62,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    // extend(config, ctx) {},
+    // transpile: [
+    //   'mdbvue/lib/components'
+    // ]
   }
 }

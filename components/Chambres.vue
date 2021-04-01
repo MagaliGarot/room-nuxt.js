@@ -5,6 +5,7 @@
             <br/>
             <button class="chambre__link"> Details </button>
         </NuxtLink>
+        <!-- Page chambre ds product : _id.vue -->
 </template>
 
 <script>

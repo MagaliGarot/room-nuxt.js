@@ -3,11 +3,12 @@
         <div class="containerText">
           <p class="textInfo"> N'hésitez pas à nous contacter pour toutes information et réservations : 
             <br>
-            tel : {{item.tel}}
+            ☎ {{item.tel}}
             <br>
-            mail : {{item.mail}} 
+            ✉ {{item.mail}} 
              </p>
           <p class="textInfo"> {{item.adresse}} </p>
+           <p class="textInfo"> {{item.condition}} </p>
         </div>
 
         <h1 class="map__title"> Map </h1>

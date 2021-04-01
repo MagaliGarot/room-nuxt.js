@@ -17,10 +17,7 @@
             {{ chambreData.taxe }}
         </p>
         <p class="chambre__descri">
-            {{ chambreData.paiment }}
-        </p>
-        <p class="chambre__descri">
-            {{ chambreData.condition }}
+            {{ chambreData.paiement }}
         </p>
         <img :src="require(`@/assets/picture/${chambreData.image}`)" alt="" class="chambreData.alt">
     </div>

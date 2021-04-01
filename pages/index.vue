@@ -57,8 +57,8 @@ export default {
   }
 
   html {
-      width: 100%;
-      height: 100%;
+      width: 100% !important;
+      height: 100% !important;
   }
 
 /* FLEX CARD CHAMBRE */

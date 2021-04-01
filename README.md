@@ -35,15 +35,15 @@ Etude de nuxt.js. Afin de realiser ce projet j'ai repris des informations et ima
 ├── layout</br>
 │ ├── default.vue</br>
 ├── pages</br>
-│ ├── blog </br>
-│ ├──── _slug.vue
+│ ├── blog</br>
+│ ├──── _slug.vue</br>
 │ ├── products</br>
-│ ├──── _id.vue
-│ ├── article.vue </br>
-│ ├── contact.vue </br>
-│ ├── index.vue </br>
+│ ├──── _id.vue</br>
+│ ├── article.vue</br>
+│ ├── contact.vue</br>
+│ ├── index.vue</br>
 ├── store</br>
-│ ├── index.js </br>
+│ ├── index.js</br>
 
 ## 📱 Responsive
 * Smartphone
@@ -61,6 +61,7 @@ Actuellement en formation à BeCode Liège, je me forme avec comme objectif de d
 https://www.youtube.com/watch?v=Wdmi4k7sFzU&t=7818s
 https://www.digitalocean.com/community/tutorials/vuejs-create-image-slider
 https://www.youtube.com/watch?v=1SAZMFwYUDE
+https://fr.vuejs.org/v2/cookbook/form-validation.html
 
 ### 🖼 Picture
 Infos et Images : http://chambresaustavit.free.fr/
