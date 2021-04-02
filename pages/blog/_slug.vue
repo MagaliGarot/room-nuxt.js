@@ -24,6 +24,10 @@ article{
     margin-right: 20%;
     margin-left: 20%;
     margin-top: 100px;
+
+    font-family: 'Prata', serif;
+    font-weight: 800;
+    line-height: 2em;
 }
 
 .article__picture{
