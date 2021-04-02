@@ -1,4 +1,5 @@
 <template>
+<div>
   <nav>
     <div class="nav">
       <nuxt-link class="linkNav" to="/">
@@ -12,7 +13,14 @@
       </nuxt-link>
     </div>
   </nav>
+</div>
 </template>
+
+<script>
+export default {
+    transition: 'bounce',
+  }
+</script>
 
 <style scoped>
   .nav{
@@ -35,6 +43,7 @@
 
   padding: 30px 10px;
 }
+
 
 /* ================================
     RESPONSIVE --> SCREEN DESKTOP

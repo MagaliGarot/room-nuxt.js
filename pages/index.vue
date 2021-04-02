@@ -28,11 +28,16 @@ import Slider from "@/components/Slider.vue";
 import Map from "@/components/Map.vue";
 
 export default {
+  transition: 'fade',
+
   components: {
     Chambres,
     Slider,
     Map,
   },
+
+  transition: 'fade',
+  mode: "out-in",
 
   data(){
     return{

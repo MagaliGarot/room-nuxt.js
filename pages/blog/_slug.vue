@@ -1,6 +1,7 @@
 <template>
     <div>
         <article>
+            <img class="article__picture" :src="require(`~/assets/picture/${article.img}`)" alt="Photo de l'article"/>
             <nuxt-content :document="article" />
         </article>
     </div>    
@@ -17,12 +18,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 article{
     margin-right: 20%;
     margin-left: 20%;
     margin-top: 100px;
+}
+
+.article__picture{
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 </style>

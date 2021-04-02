@@ -7,6 +7,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _baae59fe = () => interopDefault(import('../pages/article.vue' /* webpackChunkName: "pages/article" */))
 const _7453852b = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
 const _4ff9f5ac = () => interopDefault(import('../pages/products/index.vue' /* webpackChunkName: "pages/products/index" */))
+const _0d04609b = () => interopDefault(import('../pages/validate.vue' /* webpackChunkName: "pages/validate" */))
 const _2be99ba2 = () => interopDefault(import('../pages/blog/_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
 const _42a17314 = () => interopDefault(import('../pages/products/_id.vue' /* webpackChunkName: "pages/products/_id" */))
 const _46963cc6 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -34,6 +35,10 @@ export const routerOptions = {
     path: "/products",
     component: _4ff9f5ac,
     name: "products"
+  }, {
+    path: "/validate",
+    component: _0d04609b,
+    name: "validate"
   }, {
     path: "/blog/:slug?",
     component: _2be99ba2,

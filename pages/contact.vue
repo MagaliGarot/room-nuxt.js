@@ -8,7 +8,7 @@
         id="app"
         name="contact"
         @submit="checkForm"
-        action="/"
+        action="/validate"
         method="post"
         novalidate="true"
         netlify-honeypot="bot-field"
@@ -16,7 +16,7 @@
         netlify
       >
         <input type = "hidden" name = "form-name" value = "contact" />
-        
+
         <p v-if="errors.length">
           <b class="attention">Merci de vérifier les champs suivant :</b>
           <ul>
@@ -76,6 +76,8 @@
 
 <script>
 export default{
+  transition: 'fade',
+
   data: () => {
     return {
     errors: [],

@@ -1,8 +1,6 @@
 <template>
-    <div class="noFlex">
-        <div>
-            <h1 class="titlePage">Articles</h1>
-        </div>
+    <div>
+        <h1 class="titlePage">Articles</h1>
         <div class="articles">
             <div class="article" v-for="article of articles" :key="article">
                 <nuxt-link class="article__container" :to="{ name: 'blog-slug', params: { slug: article.slug } }">
@@ -17,6 +15,8 @@
 
 <script>
 export default {
+    transition: 'fade',
+
     async asyncData({ $content, params }){
         const articles = await $content('blog', params.slug)
             .only(['title', 'description' ,'img', 'slug'])
@@ -52,7 +52,7 @@ export default {
     margin-top: 60px;
 
     display: block;
-    width: 30rem;
+    width: 20rem;
 
     margin-right: auto;
     margin-left: auto;
@@ -65,7 +65,7 @@ export default {
     color: #20202c;
 
     display: block;
-    width: 30rem;
+    width: 20rem;
 
     margin-right: auto;
     margin-left: auto;
@@ -75,7 +75,7 @@ export default {
     color:#20202c;
 
     display: block;
-    width: 30rem;
+    width: 20rem;
 
     margin-right: auto;
     margin-left: auto;
@@ -106,6 +106,18 @@ export default {
     flex-wrap: wrap;
 }
 
+.article__picture{
+    width: 30rem;
+}
+
+.article__title{
+    width: 30rem;
+}
+
+.article__text{
+    width: 30rem;
+}
+
 }
 
 /* ================================
@@ -120,6 +132,18 @@ export default {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.article__picture{
+    width: 30rem;
+}
+
+.article__title{
+    width: 30rem;
+}
+
+.article__text{
+    width: 30rem;
 }
 
 }
