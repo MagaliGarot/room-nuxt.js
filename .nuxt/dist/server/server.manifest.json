@@ -1,0 +1,33 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/chambres.js": "components/chambres.js",
+    "components/headers.js": "components/headers.js",
+    "components/map.js": "components/map.js",
+    "components/notfound.js": "components/notfound.js",
+    "components/slider.js": "components/slider.js",
+    "pages/article.js": "pages/article.js",
+    "pages/blog/_slug.js": "pages/blog/_slug.js",
+    "pages/contact.js": "pages/contact.js",
+    "pages/index.js": "pages/index.js",
+    "pages/products/_id.js": "pages/products/_id.js",
+    "pages/products/index.js": "pages/products/index.js",
+    "pages/validate.js": "pages/validate.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/chambres.js": "components/chambres.js.map",
+    "components/headers.js": "components/headers.js.map",
+    "components/map.js": "components/map.js.map",
+    "components/notfound.js": "components/notfound.js.map",
+    "components/slider.js": "components/slider.js.map",
+    "pages/article.js": "pages/article.js.map",
+    "pages/blog/_slug.js": "pages/blog/_slug.js.map",
+    "pages/contact.js": "pages/contact.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/products/_id.js": "pages/products/_id.js.map",
+    "pages/products/index.js": "pages/products/index.js.map",
+    "pages/validate.js": "pages/validate.js.map",
+    "server.js": "server.js.map"
+  }
+}
