@@ -2,6 +2,9 @@
   "Chambres": {
     "description": "Auto imported from components/Chambres.vue"
   },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
   "Headers": {
     "description": "Auto imported from components/Headers.vue"
   },

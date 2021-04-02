@@ -1,19 +1,22 @@
 <template>
   
-  <div class="imageFond">
-        <h1 class="titleContact">Contact  <p>En construction</p> </h1>
+  <div>
+        <h1 class="titleContact">Contact</h1>
     <div class="containerForm">
+      <img class="logo" src="../assets/picture/logo.png">
       <form
         id="app"
         name="contact"
         @submit="checkForm"
         action="/"
-        method="POST"
+        method="post"
         novalidate="true"
         netlify-honeypot="bot-field"
         data-netlify="true"
+        netlify
       >
-
+        <input type = "hidden" name = "form-name" value = "contact" />
+        
         <p v-if="errors.length">
           <b class="attention">Merci de vérifier les champs suivant :</b>
           <ul>
@@ -114,14 +117,12 @@ export default{
 
 <style scoped>
 
-/* .imageFond{
-  background-image: url("../assets/picture/Paysage-Saint-Malo-Magali-Garot.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
-  height: 100%;
-  padding: 20px 20px;
-} */
+.logo{
+  width: 200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .titleContact{
   text-align:center;
@@ -193,6 +194,10 @@ textarea{
 
 @media screen and (min-width: 1000px) {
 
+  .logo{
+  width: 350px;
+}
+
   .containerForm{
     width: 30%;
 }
@@ -210,6 +215,10 @@ textarea{
    ================================ */
 
 @media screen and (min-width: 500px) and (max-width: 1000px) {
+
+  .logo{
+  width: 300px;
+}
 
 .buttonSubmit{
    width: 30%;

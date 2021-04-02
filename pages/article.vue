@@ -65,17 +65,17 @@ export default {
     color: #20202c;
 
     display: block;
-    width: 20rem;
+    width: 30rem;
 
     margin-right: auto;
     margin-left: auto;
 }
 
 .article__text{
-    color:#747474;
+    color:#20202c;
 
     display: block;
-    width: 20rem;
+    width: 30rem;
 
     margin-right: auto;
     margin-left: auto;
