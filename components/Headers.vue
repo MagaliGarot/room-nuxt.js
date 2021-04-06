@@ -79,11 +79,11 @@ export default{
 
 
 .hero{
-    height: 520px;
+    height: 580px;
 }
 
 .fond-logo{
-    height: 520px;
+    height: 580px;
     background-color: #20202c;
 }
 .hero__logo{

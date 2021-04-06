@@ -67,5 +67,9 @@ export default {
     // transpile: [
     //   'mdbvue/lib/components'
     // ]
+  },
+
+  generate: {
+    fallback: '404.html'
   }
 }
